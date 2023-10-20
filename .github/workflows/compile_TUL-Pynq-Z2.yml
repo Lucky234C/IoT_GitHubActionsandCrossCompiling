@@ -1,0 +1,24 @@
+name: Compile for TUL Pynq Z2
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build_for_tul_pynq:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Install Dependencies for TUL Pynq Z2
+      run: |
+        # Add commands to install necessary dependencies for TUL Pynq Z2 compilation
+
+    - name: Compile C/C++ Program for TUL Pynq Z2
+      run: |
+        # Add commands to cross-compile for TUL Pynq Z2
+      ```
+
