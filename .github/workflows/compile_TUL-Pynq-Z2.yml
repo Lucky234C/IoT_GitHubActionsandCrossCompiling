@@ -20,5 +20,3 @@ jobs:
     - name: Compile C/C++ Program for TUL Pynq Z2
       run: |
         # Add commands to cross-compile for TUL Pynq Z2
-      ```
-
