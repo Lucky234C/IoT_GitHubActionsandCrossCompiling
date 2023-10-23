@@ -16,4 +16,3 @@ jobs:
     - name: Compile C/C++ Program
       run: |
         g++ main.cpp -o my_program
-      ```
