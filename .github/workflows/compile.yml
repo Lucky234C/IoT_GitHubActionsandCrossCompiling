@@ -1,9 +1,6 @@
-name: Compile C/C++ Program
+name: Build
 
-on:
-  push:
-    branches:
-      - main
+on: [push]
 
 jobs:
   build:
@@ -13,6 +10,11 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v2
 
-    - name: Compile C/C++ Program
+    - name: Build C/C++ Program
       run: |
-        g++ main.cpp -o my_program
+        g++ Hello.cpp -o main
+      working-directory: ${{ github.workspace }}
+
+    - name: Execute Program
+      run: |
+        ./main
